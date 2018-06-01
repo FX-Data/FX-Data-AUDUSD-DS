@@ -44,7 +44,7 @@ before_install:
 - set -e
 install: 
 before_script:
-- curl -o Makefile https://raw.githubusercontent.com/FX31337/FX-BT-Data-Test/master/Makefile
+- curl -o Makefile https://raw.githubusercontent.com/FX-Data/FX-Data-Test/master/Makefile
 script:
 - make $FORMAT
 after_success: 
@@ -64,7 +64,7 @@ deploy:
   skip_cleanup: true
   overwrite: true
   on:
-    repo: FX31337/FX-BT-Data-AUDUSD-DS
+    repo: FX-Data/FX-Data-AUDUSD-DS
     tags: true
 after_deploy:
 - make clean
